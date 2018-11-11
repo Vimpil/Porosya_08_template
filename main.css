@@ -6,156 +6,245 @@ body {
 	margin-top: 40px;
 }
 
-p,button{
+p, button {
 	font-family: Tahoma, Verdana, Segoe, sans-serif;
 	color: rgb(73, 73, 73);
 	font-weight: inherit;
 	line-height: 20px;
 }
+
 header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 60px;
 }
-img{
+
+img {
 	margin-block-start: 16px;
 	margin-block-end: 1em;
 }
-a{
+
+a {
 	text-decoration: none;
-	color:black;
+	color: black;
 }
+
 .mail_addr {
-	width: 25%;
+	width: 23%;
+	padding-left: 35px;
 }
+
 .phone {
 	width: 30%;
 	text-align: right;
 }
-#to_book_a_call{
-  border-radius: 2px;
-  background-image: -moz-linear-gradient( 90deg, rgb(245,161,0) 0%, rgb(255,168,0) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(245,161,0) 0%, rgb(255,168,0) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(245,161,0) 0%, rgb(255,168,0) 100%);
-  width: 100%;
-  height: 37px;
-  z-index: 310;
-  color:white;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  margin: 12px 0;
+
+#to_book_a_call {
+	border-radius: 2px;
+	background-image: -moz-linear-gradient(90deg, rgb(245, 161, 0) 0%, rgb(255, 168, 0) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(245, 161, 0) 0%, rgb(255, 168, 0) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(245, 161, 0) 0%, rgb(255, 168, 0) 100%);
+	width: 100%;
+	height: 37px;
+	z-index: 310;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	margin: 12px 0;
+	max-width: 230px;
 }
-#to_book_a_call:hover{	
-background-image: -webkit-linear-gradient( 90deg, rgb(255, 170, 0) 0%, rgb(255, 170, 0) 100%);
+
+#to_book_a_call:hover {
+	background-image: -webkit-linear-gradient(90deg, rgb(255, 170, 0) 0%, rgb(255, 170, 0) 100%);
 }
-#to_book_a_call:active,visited{	
-background-image: -webkit-linear-gradient( 90deg, rgb(165, 109, 1) 0%, rgb(165, 109, 1) 100%);
+
+#to_book_a_call:active, visited {
+	background-image: -webkit-linear-gradient(90deg, rgb(165, 109, 1) 0%, rgb(165, 109, 1) 100%);
 }
+
 a.facebook i {
-    color: white;
-    padding: 5px 8px;
-    font-size: 15px;
-    border-radius: 20px;
-    background-color: black;
+	color: white;
+	padding: 5px 8px;
+	font-size: 15px;
+	border-radius: 20px;
+	background-color: black;
 }
+
 a.vk i {
-    color: white;
-    padding: 5px 4px;
-    font-size: 16px;
-    border-radius: 20px;
-    background-color: black;
-    margin-left: 65px;
-    margin-right: 10px;
+	color: white;
+	padding: 5px 4px;
+	font-size: 16px;
+	border-radius: 20px;
+	background-color: black;
+	margin-left: 65px;
+	margin-right: 10px;
 }
-i:hover {
-    opacity: 0.4;
+
+.logo_smm i:hover {
+	opacity: 0.4;
 }
+
 .logo img {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
-.mail_addr p b, .mail_addr a{
+
+.mail_addr p b, .mail_addr a {
 	font-size: 14px;
 }
-.mail_addr a{
+
+.mail_addr a {
 	color: blue;
 	text-decoration: underline;
 	font-weight: bold;
 }
+
 .phone a {
 	font-size: 20px;
 }
+
 i.fas.fa-envelope {
-    padding-right: 5px;
-    font-size: 15px;
+	padding-right: 5px;
+	font-size: 15px;
 }
 
 i.fab.fa-skype {
-    font-size: 18px;
-    padding-right: 5px;
+	font-size: 18px;
+	padding-right: 5px;
 }
 
 i.fas.fa-map-marked-alt {
-    font-size: 15px;
-    padding-right: 5px;
+	font-size: 15px;
+	padding-right: 5px;
 }
+
 .phone a {
-    display: block;
-    margin: 8px 0;
+	display: block;
+	margin: 8px 0;
 }
-@media screen and (max-width: 980px) {
-	header{
+
+@media screen and (max-width:980px) {
+	header {
 		flex-direction: column;
 		text-align: center;
 	}
+
 }
-@media screen and (max-width: 980px) {
+
+@media screen and (max-width:980px) {
 	.mail_addr {
-    max-width: 410px;
-    margin: 0 auto;
-    width: auto;    
+		max-width: 410px;
+		margin: 0 auto;
+		width: auto;
+		padding-left: 0;
+	}
+
 }
-}
-@media screen and (max-width: 980px) {
+
+@media screen and (max-width:980px) {
 	a.vk i {
-    margin-left: 0px;  
+		margin-left: 0px;
+	}
+
 }
-}
-@media screen and (max-width: 980px) {
+
+@media screen and (max-width:980px) {
 	.phone {
-    max-width: 260px;
-    text-align: center;
-    margin: 0 auto;
-    width: auto;
-}  
+		max-width: 260px;
+		text-align: center;
+		margin: 0 auto;
+		width: auto;
+	}
+
 }
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+/* Add a black background color to the top navigation bar */
+.topnav {
     overflow: hidden;
-    background-color: #333;
+    list-style-type: none;
+    background-image: -moz-linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(73, 73, 73) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(73, 73, 73) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(73, 73, 73) 100%);
+    display: flex;
+    justify-content: space-between;
 }
 
-ul.topnav li {float: left;}
-
-ul.topnav li a {
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #4CAF50;}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: #fca600;
 }
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-image: -moz-linear-gradient(90deg, rgb(245, 161, 0) 0%, rgb(255, 168, 0) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(245, 161, 0) 0%, rgb(255, 168, 0) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(245, 161, 0) 0%, rgb(255, 168, 0) 100%);
+    color: white;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+	background-image: -webkit-linear-gradient(90deg, rgb(245, 161, 0) 0%, rgb(255, 168, 0) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(245, 161, 0) 0%, rgb(255, 168, 0) 100%);
+}
+
+ul.topnav li.right {
+	float: right;
+}
+.topnav .search-container {
+    float: right;
+}
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    max-width: 162px;
+}
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: white;
+    color: gray;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.topnav .search-container button:hover {
+    background: white;
+}
+.search-container i {
+    opacity: 1;
+}
+
+.topnav a.active:first-child {
+    width: 222px;
+}
+input[type="text"]:focus {outline: none;}
