@@ -69,3 +69,18 @@ window.onclick = function(e) {
       }
    }
 }
+jQuery(document).ready(function($) {
+   $('.gallery-item').magnificPopup({
+      type: 'image',
+      gallery: {
+         enabled: true
+      },
+  callbacks: {
+    
+    buildControls: function() {
+      // re-appends controls inside the main container
+      this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+    }
+     } 
+   });
+});
