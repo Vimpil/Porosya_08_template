@@ -1,4 +1,10 @@
 $(function() {
+
+   $("#add_file").click(function(event) {
+      console.log($(this).parent());
+      console.log($(this).parent().children('input'));
+      $(this).parent().children('input').click();
+   });
    $('nav#menu').mmenu({
       extensions: ["widescreen"],
       drag: true,
