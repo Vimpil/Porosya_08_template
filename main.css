@@ -73,6 +73,7 @@ a {
 }
 
 .yellow_button {
+    text-align: center;
     border-radius: 2px;
     width: 100%;
     height: 37px;
@@ -188,7 +189,7 @@ i.fas.fa-map-marked-alt {
 .topnav {
     overflow: hidden;
     list-style-type: none;
-    display: -webkit-box;
+    display: flex;
     background-image: linear-gradient(#484848, #2F2F2F);
 }
 
@@ -233,6 +234,7 @@ ul.topnav li.right {
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    padding-bottom: 7px;
 }
 
 .topnav .search-container button {
@@ -1407,7 +1409,7 @@ footer.top {
 display: flex;
 }
 
-.top {display: flex;max-width: 1000px;margin: 0 auto;border-bottom: 1px solid #bfbfbf;padding-bottom: 30px;}
+.top {display: flex;max-width: 1000px;margin: 0 auto;border-bottom: 1px solid #bfbfbf;padding-bottom: 25px;}
 
 .dashed {
 background-image: linear-gradient(to right, #666666 75%, transparent 75%);
@@ -1422,15 +1424,13 @@ margin-bottom: 5px;
 
 .communic a {color: #4689FC;}
 
-.phones {
-margin-bottom: 10px;
-}
+.phones {margin-bottom: 10px;}
 
-footer:before {position: absolute;border-top: #CECECE;border-bottom: #d8d8d8;content: "";top: 0;z-index: -1;width: 100%;height: 100%;background-image: linear-gradient(#d8d8d8, white,white);display: block;}
+footer:before {position: absolute;border-top: #CECECE;border-bottom: #d8d8d8;content: "";top: 0;z-index: -1;width: 100%;height: 100%;background-image: linear-gradient(#e1e1e1, white,white);display: block;}
 
 footer {
     position: relative;
-    padding: 20px 0;
+    padding: 25px 0;
     border-top: 1px solid #c0c0c0;
 }
 main {
@@ -1490,7 +1490,7 @@ main {
 .made_by {
     position: absolute;
     top: 5px;
-    right: 23px;
+    right: 0px;
 }
 
    @media screen and (max-width:768px){
@@ -1505,9 +1505,80 @@ main {
 
 .bottom {
     position: relative;
+    max-width: 960px;
+    margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
     ul{
         text-align: left;
     }
+}.phones a {
+    text-decoration: none;
+}
+#back_top_btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    height: 49px;
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fca809; /* Set a background color */
+    background-image: linear-gradient(white,#D2D2D2);
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border: 1px solid #CCCCCC;
+}
+
+#back_top_btn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+#back_top_btn img {
+    width: 20px;
+}
+button#call_to_us {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+     /* Place the button at the bottom of the page */
+    bottom: 130px;
+    height: 49px;
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fca809; /* Set a background color */
+    background-image: linear-gradient(white,#D2D2D2);
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border: 1px solid #CCCCCC;
+}
+
+button#write_to_us {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 75px; /* Place the button at the bottom of the page */
+    height: 49px;
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fca809; /* Set a background color */
+    background-image: linear-gradient(white,#D2D2D2);
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border: 1px solid #CCCCCC;
+}
+.right_nav button:hover {
+    background-color: #f8a505!important;
+    background-image: none!important;
 }
