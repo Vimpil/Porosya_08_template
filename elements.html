@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link type="text/css" rel="stylesheet" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css">
@@ -33,7 +34,7 @@
 					<a href="tel:88162603686">8 (8162) <b>60-36-86</b></a>
 					<a href="tel:88162605578">8 (8162) <b>60-55-78</b></a>
 					<span>Звоните с <b>8:00 - 23:00</b> (без выходных)</span>
-					<button class="to_book_a_call" id="to_book_a_call" type="button">Заказать звонок</button>
+					<button class="yellow_button" id="to_book_a_call" type="button">Заказать звонок</button>
 				</div>
 			</header>
 			<main>
@@ -55,9 +56,9 @@
 							</div>
 						</div>
 					</div>
-					<a href="#news">Новости</a>
-					<a href="#contact">Контакты</a>
-					<a href="#about">Карта сайта</a>
+					<a href="#news" class="menu-title">Новости</a>
+					<a href="#contact" class="menu-title">Контакты</a>
+					<a href="#about" class="menu-title">Карта сайта</a>
 					<div class="search-container">
 						<input type="text" placeholder="Поиск..">
 						<button type="button"><i class="fa fa-search"></i></button>
@@ -94,7 +95,7 @@
 						</ul>
 					</div>
 					<h1>
-					Аренда спецтехники(H1)
+					Аренда спецтехники (H1)
 					</h1>
 					<p>Спецтехника в аренду является достойной альтернативой приобретения дорогостоящих машин, которые востребованы организациями и частным лицам для разовых работ. Необходимость в услуге возникает при строительстве зданий и возведении различных конструкций, сооружении систем водоснабжения и канализации, прокладке кабелей, уборке мусора, благоустройстве территорий, переезде и прочих работах.</p>
 					<p>В Великом Новгороде к вашим услугам спецтехника компании «СтройСоюз». Обеспечим все виды работ, связанные с транспортировкой, погрузкой и разгрузкой, подъемом на различную высоту и перемещением грузов. Всегда в наличии и готовы к выезду на объект и за его пределами:</p>
@@ -187,26 +188,49 @@
 						</div>
 						<div class="form-line textarea">
 							<textarea placeholder="Ваше сообщение..." type="text"></textarea>
-							
-
-								<div class="upload-btn-wrapper">
-									<button class="btn" id="add_file">Прикрепить файл</button>
-									<input type="file" name="myfile" />
-								</div>
-
+							<div class="upload-btn-wrapper">
+								<button class="btn" id="add_file">Прикрепить файл</button>
+								<input type="file" name="myfile" />
 							</div>
 						</div>
+						<div class="form-line checkbox">
+							<label class="container">Подписаться на новости
+								<input type="checkbox" name="sub_news" value="sub_news" checked="checked">
+								<span class="checker"></span>
+							</label>
+						</div>
+						<div class="form-line">
+							<button class="yellow_button" id="live_an_order" type="button">Оставить заявку</button>
+						</div>
+					</div>
+					
 					<h3>Отзывы(Н3)</h3>
 					<div class="reviews">
 						<div class="review">
-							<img src="" alt="">
-							<div class="title">Анна Герасимова</div>
-							<div class="descr">Покупка техники для выполнения строительных и ремонтных работ часто невозможна из-за высокой стоимости. Лучшим решением в этом случае является аренда спецтехники на выгодных условиях, например, в компании «СтройСоюз».</div>
+							<img src="img/feddb1.png" alt="">
+							<div class="text">
+								<div class="title">Анна Герасимова</div>
+								<div class="descr">Покупка техники для выполнения строительных и ремонтных работ часто невозможна из-за высокой стоимости. Лучшим решением в этом случае является аренда спецтехники на выгодных условиях, например, в компании «СтройСоюз».</div>
+							</div>
+						</div>
+						<div class="review">
+							<img src="img/feddb2.png" alt="">
+							<div class="text">
+								<div class="title">Анна Герасимова</div>
+								<div class="descr">Покупка техники для выполнения строительных и ремонтных работ часто невозможна из-за высокой стоимости. Лучшим решением в этом случае является аренда спецтехники на выгодных условиях, например, в компании «СтройСоюз».</div>
+							</div>
 						</div>
 					</div>
 					<h3>Вопрос-ответ(Н3)</h3>
 					<div class="question_answer">
-						<button class="accordion">Создалось несколько странное обстоятельство расстояниях от нас местах, где наблюдались интенсивный источники расстояниях?</button>
+						<button class="accordion"><span class="dashed">Создалось несколько странное обстоятельство расстояниях от нас местах, где наблюдались интенсивный источники расстояниях?</span></button>
+						<div class="panel">
+							<div class="title">Ответ</div>
+							<p>Этой полосы и в тех местах, где наблюдались интенсивный источники радиоизлучения первой. Величины, никак не об­наруживают галактической концентрации этих источников радиоизлучения. следовало ожидать.</p>
+						</div>
+					</div>
+					<div class="question_answer">
+						<button class="accordion"><span class="dashed">Создалось несколько странное обстоятельство расстояниях от нас местах, где наблюдались интенсивный источники расстояниях?</span></button>
 						<div class="panel">
 							<div class="title">Ответ</div>
 							<p>Этой полосы и в тех местах, где наблюдались интенсивный источники радиоизлучения первой. Величины, никак не об­наруживают галактической концентрации этих источников радиоизлучения. следовало ожидать.</p>
@@ -215,17 +239,31 @@
 				</section>
 			</main>
 			<footer>
-				<div class="top">x
-					<div class="stat_mail_addr"></div>
-					<div class="communic"></div>
-					<div class="work_hours"></div>
+				<div class="top">
+					<div class="stat_mail_addr">
+						<p>© 2015 “СтройСоюз”</p>
+						<p>Адрес: г. Великий Новгород ,<br> ул.Большая Санкт-Петербургская, 56,<br> офис 5, 2 этаж, рядом с ТК "Лента"</p>
+					</div>
+					<div class="communic">
+						<p>E-mail: <a href="mailto:and922020@mail.ru?subject=Order">and922020@mail.ru</a></p>
+						<p>Skype: <a href="skype:and922020?call">and922020</a></p>
+					</div>
+					<div class="work_hours">
+						<div class="phones">
+							<a href="tel:88162603686">8 (8162) <b>60-36-86</b></a>/
+							<a href="tel:88162605578">8 (8162) <b>60-55-78</b></a><br>
+							<a href="tel:+79116003686"><b>+7 911 600 36 86</b></a><br>
+						</div>
+						<span>Работаем без выходных, с 8:00 до 23:00</span>
+					</div>
 				</div>
 				<div class="bottom">
 					<div class="smm">
-						
+						<a href="" class="vk"><i class="fab fa-vk"></i></a>
+						<a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
 					</div>
 					<div class="made_by">
-						
+						<a href="">Разработка сайта:</a> kuratov.ru
 					</div>
 				</div>
 			</footer>
@@ -241,80 +279,6 @@
 				</ul>
 			</nav>
 		</div>
-		<script>
-		var x, i, j, selElmnt, a, b, c;
-		/*look for any elements with the class "custom-select":*/
-		x = document.getElementsByClassName("custom-select");
-		for (i = 0; i < x.length; i++) {
-		selElmnt = x[i].getElementsByTagName("select")[0];
-		/*for each element, create a new DIV that will act as the selected item:*/
-		a = document.createElement("DIV");
-		a.setAttribute("class", "select-selected");
-		a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-		x[i].appendChild(a);
-		/*for each element, create a new DIV that will contain the option list:*/
-		b = document.createElement("DIV");
-		b.setAttribute("class", "select-items select-hide");
-		for (j = 0; j < selElmnt.length; j++) {
-		/*for each option in the original select element,
-		create a new DIV that will act as an option item:*/
-		c = document.createElement("DIV");
-		c.innerHTML = selElmnt.options[j].innerHTML;
-		c.addEventListener("click", function(e) {
-		/*when an item is clicked, update the original select box,
-		and the selected item:*/
-		var y, i, k, s, h;
-		s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-		h = this.parentNode.previousSibling;
-		for (i = 0; i < s.length; i++) {
-		if (s.options[i].innerHTML == this.innerHTML) {
-		s.selectedIndex = i;
-		h.innerHTML = this.innerHTML;
-		y = this.parentNode.getElementsByClassName("same-as-selected");
-		for (k = 0; k < y.length; k++) {
-		y[k].removeAttribute("class");
-		}
-		this.setAttribute("class", "same-as-selected");
-		break;
-		}
-		}
-		h.click();
-		});
-		b.appendChild(c);
-		}
-		x[i].appendChild(b);
-		a.addEventListener("click", function(e) {
-		/*when the select box is clicked, close any other select boxes,
-		and open/close the current select box:*/
-		e.stopPropagation();
-		closeAllSelect(this);
-		this.nextSibling.classList.toggle("select-hide");
-		this.classList.toggle("select-arrow-active");
-		});
-		}
-		function closeAllSelect(elmnt) {
-		/*a function that will close all select boxes in the document,
-		except the current select box:*/
-		var x, y, i, arrNo = [];
-		x = document.getElementsByClassName("select-items");
-		y = document.getElementsByClassName("select-selected");
-		for (i = 0; i < y.length; i++) {
-		if (elmnt == y[i]) {
-		arrNo.push(i)
-		} else {
-		y[i].classList.remove("select-arrow-active");
-		}
-		}
-		for (i = 0; i < x.length; i++) {
-		if (arrNo.indexOf(i)) {
-		x[i].classList.add("select-hide");
-		}
-		}
-		}
-		/*if the user clicks anywhere outside the select box,
-		then close all select boxes:*/
-		document.addEventListener("click", closeAllSelect);
-		</script>
 		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" src="js/hammer.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
