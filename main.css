@@ -7,6 +7,20 @@
 }
 
 @font-face {
+    font-family: 'Tahoma Regular';
+    src: url('fonts/Tahoma.woff2') format('woff2'), url('fonts/Tahoma.woff') format('woff'), url('fonts/Tahoma.ttf') format('truetype'), url('fonts/Tahoma.eot') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tahoma Bold';
+    src: url('fonts/Tahoma-Bold.woff2') format('woff2'), url('fonts/Tahoma-Bold.woff') format('woff'), url('fonts/Tahoma-Bold.ttf') format('truetype'), url('fonts/Tahoma-Bold.eot') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'HeliosCond Regular';
     src: url('fonts/HeliosCond.woff2') format('woff2'), url('fonts/HeliosCond.woff') format('woff'), url('fonts/HeliosCond.ttf') format('truetype'), url('fonts/HeliosCond.eot') format('truetype');
     font-weight: normal;
@@ -75,7 +89,7 @@ a {
 .yellow_button {
     text-align: center;
     border-radius: 2px;
-    width: 100%;
+    width: 200px;
     height: 37px;
     z-index: 310;
     color: white;
@@ -161,7 +175,7 @@ i.fas.fa-map-marked-alt {
 
 @media screen and (max-width:980px) {
     .mail_addr {
-        max-width: 410px;
+        max-width: 218px;
         margin: 0 auto;
         width: auto;
         padding-left: 0;
@@ -290,6 +304,19 @@ input[type="text"]:focus {
     margin: 0;
 }
 
+.left_nav .dropdown-content {
+    margin-top: 0px;
+    padding-top: 20px;
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: white;
+    display: block;
+    width: auto;
+    margin-bottom: 30px;
+}
+
 .dropdown-content {
     display: none;
     margin-top: 0px;
@@ -298,7 +325,7 @@ input[type="text"]:focus {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 100;
     width: 960px;
     background-color: white;
 }
@@ -436,14 +463,14 @@ aside.left_nav {
     padding-top: 50px;
     display: inline-block;
     width: 27.1%;
-    float: left;
     /* padding-left: 25px; */
 }
 
 section.main {
-    display: inline-block;
+    display: block;
     padding-left: 28px;
-    width: 68%;
+    width: 69.9%;
+    float: right;
 }
 
 .sitemap ul {
@@ -477,25 +504,28 @@ section.main {
     text-decoration: inherit;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     .sitemap ul {
         display: grid;
+        text-align: center;
     }
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     .sitemap li {
         padding-bottom: 10px;
     }
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     .sitemap li:after {
         position: absolute;
         top: 10px;
-        left: 130px;
+        width: 0px;
+        margin-left: -12px;
+        left: 50%;
     }
 
 }
@@ -507,6 +537,22 @@ section.main {
 .promote img {
     width: 100%;
     margin-bottom: 25px;
+}
+
+@media screen and (min-width:768px) and (max-width:931px) {
+    .promote {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .promote {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }
 
 .news_title {
@@ -722,14 +768,14 @@ ul li .img-close {
     color: black;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     .list-with-heading {
         display: none;
     }
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     aside.left_nav {
         float: none !important;
         margin: 0 auto;
@@ -743,7 +789,7 @@ ul li .img-close {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     section.main {
         display: block;
         padding: 0 20px;
@@ -755,7 +801,7 @@ ul li .img-close {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     .sitemap {
         text-align: center;
     }
@@ -769,6 +815,7 @@ thead tr th:first-child, tbody tr td:first-child {
     max-width: 290px;
     word-break: break-all;
     padding-right: 11px;
+    text-align: left;
 }
 
 table td:first-child:before {
@@ -812,7 +859,7 @@ table tr th:nth-child(2) {
     background-color: #ffa800;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     .table {
         overflow-x: auto;
     }
@@ -844,14 +891,14 @@ input#name, input#ph_or_email {
     padding-top: 35px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     div.form {
         text-align: left;
     }
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
     ol {
         text-align: left;
     }
@@ -1210,7 +1257,7 @@ height: 10px;
 background-image: url("img/checker.png");
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:931px) {
 .gallery {
     text-align: center;
 }
@@ -1221,7 +1268,12 @@ background-image: url("img/checker.png");
 margin-left: 11px;
 }
 
-button#live_an_order {width: 100%;max-width: 94.5%;margin-left: 10px;text-align: center;}
+button#live_an_order {
+width: 100%;
+max-width: 94.5%;
+margin-left: 10px;
+text-align: center;
+}
 
 .review .text {
 display: block;
@@ -1283,7 +1335,7 @@ top: 7px;
 
 @media screen and (max-width:798px) {
 img.rent_discount {
-    width: 50%;
+    width: 70%;
 }
 
 }
@@ -1352,6 +1404,13 @@ transition: 0.4s;
 margin-bottom: 10px;
 }
 
+@media screen and (max-width:931px) {
+.accordion {
+    text-align: center;
+}
+
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .question_answer .active, .accordion:hover {
 background-color: #faa607;
@@ -1372,34 +1431,57 @@ margin-bottom: 5px;
 
 .descr {
 text-align: justify;
+display: inline-block;
+padding-left: 15px;
 }
 
-.stat_mail_addr {display: inline-block;float: left;padding-left: 20px;}
-@media screen and (max-width: 768px){
 .stat_mail_addr {
-    text-align:center;
-    float:none;
-    margin:0 auto;
+display: inline-block;
+float: left;
+padding-left: 20px;
+}
+
+@media screen and (max-width:931px) {
+.stat_mail_addr {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
     margin-bottom: 15px;
     padding-left: 0;
-}}
-.communic {margin: 0 auto;margin-top: 15px;}
+}
 
-@media screen and (max-width: 768px){
+}
+
 .communic {
-    text-align:center;
-    float:none;
-    margin:0 auto;
-    margin-bottom: 10px;
-}}
-@media screen and (max-width: 768px){
-.communic p{
-    text-align:center;
-    float:none;
-    margin:0 auto;
-}}
+margin: 0 auto;
+margin-top: 15px;
+}
 
-.work_hours {display: inline-block;float: right;text-align: right;padding-right: 20px;}
+@media screen and (max-width:931px) {
+.communic {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+}
+
+@media screen and (max-width:931px) {
+.communic p {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+}
+
+.work_hours {
+display: inline-block;
+float: right;
+text-align: right;
+padding-right: 20px;
+}
 
 .communic p {
 margin-bottom: 0;
@@ -1409,7 +1491,13 @@ footer.top {
 display: flex;
 }
 
-.top {display: flex;max-width: 1000px;margin: 0 auto;border-bottom: 1px solid #bfbfbf;padding-bottom: 25px;}
+.top {
+display: flex;
+max-width: 1000px;
+margin: 0 auto;
+border-bottom: 1px solid #bfbfbf;
+padding-bottom: 25px;
+}
 
 .dashed {
 background-image: linear-gradient(to right, #666666 75%, transparent 75%);
@@ -1422,163 +1510,303 @@ background-size: 9px 1px;
 margin-bottom: 5px;
 }
 
-.communic a {color: #4689FC;}
+.communic a {
+color: #4689FC;
+}
 
-.phones {margin-bottom: 10px;}
+.phones {
+margin-bottom: 10px;
+}
 
-footer:before {position: absolute;border-top: #CECECE;border-bottom: #d8d8d8;content: "";top: 0;z-index: -1;width: 100%;height: 100%;background-image: linear-gradient(#e1e1e1, white,white);display: block;}
+footer:before {
+position: absolute;
+border-top: #CECECE;
+border-bottom: #d8d8d8;
+content: "";
+top: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(#e1e1e1, white, white);
+display: block;
+}
 
 footer {
-    position: relative;
-    padding: 25px 0;
-    border-top: 1px solid #c0c0c0;
+position: relative;
+padding: 25px 0;
+border-top: 1px solid #c0c0c0;
 }
-main {
-    max-width: 960px;
-    margin: 0 auto;
+
+main {max-width: 960px;margin: 0 auto;margin-bottom: 50px;}
+
+@media screen and (max-width:931px) {
+.form {
+    margin: 0px auto;
+    width: 380px;
 }
-@media screen and (max-width:768px) {
-    .form {
-        margin: 0px auto;
-        width: 380px;
-    }
 
 }
+
 @media screen and (max-width:406px) {
-    .form {
-        margin: 0px auto;
-        width: 100%;
-    }
+.form {
+    margin: 0px auto;
+    width: 100%;
+}
 
 }
-@media screen and (max-width:768px) {
-    .top {
-        display: grid;
-        text-align:center;
-    }
+
+@media screen and (max-width:931px) {
+.top {
+    display: grid;
+    text-align: center;
+}
 
 }
-@media screen and (max-width:768px) {
-    .stat_mail_addr p{
-        float:none;
-        padding-left:0;
-        margin:0 auto;
-        text-align:center;
-    }
+
+@media screen and (max-width:931px) {
+.stat_mail_addr p {
+    float: none;
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center;
+}
 
 }
-@media screen and (max-width:768px) {
-    .top .work_hours {
-        display: grid;
-        text-align:center;
-        padding-right: 0px;
-    }
+
+@media screen and (max-width:931px) {
+.top .work_hours {
+    display: grid;
+    text-align: center;
+    padding-right: 0px;
+}
 
 }
+
 .bottom .smm {
-    text-align: center;
-    position: relative;
-    margin-top: 20px;
-}
-@media screen and (max-width:768px){
-    .bottom .smm{
-        margin-bottom:15px;
-    }
+text-align: center;
+position: relative;
+margin-top: 20px;
 }
 
-.smm i.fab.fa-vk {margin-left: 0;}
-.made_by {
-    position: absolute;
-    top: 5px;
-    right: 0px;
+@media screen and (max-width:931px) {
+.bottom .smm {
+    margin-bottom: 15px;
 }
 
-   @media screen and (max-width:768px){
+}
+
+.smm i.fab.fa-vk {
+margin-left: 0;
+}
+
+.made_by {
+position: absolute;
+top: 5px;
+right: 0px;
+}
+
+@media screen and (max-width:931px) {
 .made_by {
     position: relative;
     text-align: center;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
 }
-   }
-   
+
+}
 
 .bottom {
-    position: relative;
-    max-width: 960px;
-    margin: 0 auto;
+position: relative;
+max-width: 960px;
+margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
-    ul{
-        text-align: left;
-    }
-}.phones a {
-    text-decoration: none;
+
+@media screen and (max-width:931px) {
+ul {
+    text-align: left;
 }
+
+}
+
+.phones a {
+text-decoration: none;
+}
+
 #back_top_btn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    height: 49px;
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #fca809; /* Set a background color */
-    background-image: linear-gradient(white,#D2D2D2);
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 3px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    border: 1px solid #CCCCCC;
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+height: 49px;
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: #fca809; /* Set a background color */
+background-image: linear-gradient(white, #D2D2D2);
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 3px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+border: 1px solid #CCCCCC;
 }
 
 #back_top_btn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+background-color: #555; /* Add a dark-grey background on hover */
 }
+
 #back_top_btn img {
-    width: 20px;
+width: 20px;
 }
+
 button#call_to_us {
-    display: block; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-     /* Place the button at the bottom of the page */
-    bottom: 130px;
-    height: 49px;
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #fca809; /* Set a background color */
-    background-image: linear-gradient(white,#D2D2D2);
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 3px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    border: 1px solid #CCCCCC;
+display: block; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+
+/* Place the button at the bottom of the page */
+bottom: 130px;
+height: 49px;
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: #fca809; /* Set a background color */
+background-image: linear-gradient(white, #D2D2D2);
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 3px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+border: 1px solid #CCCCCC;
 }
 
 button#write_to_us {
-    display: block; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 75px; /* Place the button at the bottom of the page */
-    height: 49px;
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #fca809; /* Set a background color */
-    background-image: linear-gradient(white,#D2D2D2);
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 3px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    border: 1px solid #CCCCCC;
+display: block; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 75px; /* Place the button at the bottom of the page */
+height: 49px;
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: #fca809; /* Set a background color */
+background-image: linear-gradient(white, #D2D2D2);
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 3px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+border: 1px solid #CCCCCC;
 }
+
 .right_nav button:hover {
-    background-color: #f8a505!important;
-    background-image: none!important;
+background-color: #f8a505 !important;
+background-image: none !important;
 }
+
+.booking_box img {
+display: inline-block;
+float: left;
+width: 170px;
+}
+
+.category {
+font-size: 17px;
+margin-bottom: 10px;
+}
+
+.descr span {
+display: block;
+font-size: 13px;
+}
+
+.functuons {
+display: block;
+float: right;
+text-align: center;
+}
+
+.price {
+font-family: "Tahoma Bold";
+font-size: 18px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.functions {
+display: block;
+float: right;
+}
+
+.booking_box {
+position: relative;
+width: 100%;
+height: auto;
+clear: both;
+margin-bottom: 30px;
+}
+
+.product_image {
+background-image: url("img/dump.jpg");
+background-repeat: no-repeat;
+background-size: 160px;
+height: 130px;
+width: 153px;
+position: relative;
+display: inline-block;
+float: left;
+}
+
+@media screen and (max-width:931px) {
+.booking_box {
+    display: grid;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 40px;
+}
+
+}
+
+@media screen and (max-width:931px) {
+.product_image {
+    margin: 0 auto;
+}
+
+}
+
+@media screen and (max-width:931px) {
+.descr {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+}
+
+.booking_box button#order {
+background-color: #bfbfbf;
+background-image: none;
+border: #bebebe;
+}
+
+.booking_box button#order:hover {
+border: #d48c01 solid 1px;
+background-image: linear-gradient(#FFAC0D, #F6A201);
+}
+button.slick-prev.pull-left.slick-arrow.slick-disabled, button.slick-next.pull-right.slick-arrow.slick-disabled {
+    opacity: 0.4;
+}
+.wide_img {
+margin-bottom: 60px;
+}
+
+.wide_img img {
+width: 100%;
+}
+
+button.slick-prev.pull-left.slick-arrow:hover, button.slick-next.pull-right.slick-arrow:hover {
+cursor: pointer;
+}
+
+button.slick-prev.pull-left.slick-arrow {display: block;height: 20px;width: 20px;padding: 10px;background: url('img/arrow-left.png') no-repeat;background-position: center;background-size: 9px 12px;position: absolute;background-color: #00000057;bottom: 4.5%;right: 5.9%;z-index: 100;outline: none;}
+
+button.slick-next.pull-right.slick-arrow {display: block;height: 20px;width: 20px;padding: 10px;background: url('img/arrow-right.png') no-repeat;background-position: center;background-size: 9px 12px;position: absolute;background-color: #00000057;bottom: 4.6%;right: 2.7%;outline: none;}

@@ -1,26 +1,224 @@
 <!doctype html>
 <html>
-<head></head>
-<header>
-	<div class="logo_smm">
-		<div class="logo"></div>
-		<div class="smm">
-			<a href=""></a>
-			<a href=""></a>
-		</div>
-	</div>
-	<div class="mail_addr">
-		<p>E-mail: <a href="">and922020@mail.ru</a></p>
-		<p>Skype: <a href="">and922020</a></p>
-		<p>Адрес: г. Великий Новгород , ул.Большая Санкт-Петербургская, 56, офис 5, 2 этаж, рядом с ТК "Лента"</p>
-	</div>
-	<div class="phone">
+	<head>
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link type="text/css" rel="stylesheet" href="css/normalize.css" />
+		<!-- Add additional stylesheets next -->
+		<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mhead.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
 		
-	</div>
-</header>
-<main></main>
-<footer></footer>
-<body>
+		<div id="page">
+			<div class="mh-head Sticky header" id="my-header">
+				<a href="#menu"><span></span></a>
+				Строй Союз
+			</div>
+			<header>
+				<div class="logo_smm">
+					<div class="logo"><img src="img/logo.png" alt="logo"></div>
+					<div class="smm">
+						<a href="" class="vk"><i class="fab fa-vk"></i></a>
+						<a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+					</div>
+				</div>
+				<div class="mail_addr">
+					<p><i class="fas fa-envelope"></i><b>E-mail:</b> <a href="mailto:and922020@mail.ru?subject=Order">and922020@mail.ru</a></p>
+					<p><i class="fab fa-skype"></i><b>Skype:</b> <a href="skype:and922020?call">and922020</a></p>
+					<p><i class="fas fa-map-marked-alt"></i><b>Адрес:</b> г. Великий Новгород , ул.Большая Санкт-Петербургская, 56, офис 5, 2 этаж, рядом с ТК "Лента"</p>
+				</div>
+				<div class="phone">
+					<a href="tel:88162603686">8 (8162) <b>60-36-86</b></a>
+					<a href="tel:88162605578">8 (8162) <b>60-55-78</b></a>
+					<span>Звоните с <b>8:00 - 23:00</b> (без выходных)</span>
+					<button class="yellow_button" id="to_book_a_call" type="button">Заказать звонок</button>
+				</div>
+			</header>
+			<main>
+				<div class="topnav">
+					<div class="active services">
+						<button class="dropbtn" onclick="myFunction()">Услуги и продукция
+						<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content" id="myMainDropdown">
+							<div class="list-with-heading">
+								<div class="title">Аренда спецтехники</div>
+								<a href=""><img src="img/kran-manipulator.jpg" alt=""><span>Краны-манипуляторы</span></a>
+							</div>
+							<div class="list-with-heading">
+								<div class="title">Продажа материалов</div>
+							</div>
+							<div class="list-with-heading">
+								<div class="title">Другие услуги</div>
+							</div>
+						</div>
+					</div>
+					<a href="#news" class="menu-title">Новости</a>
+					<a href="#contact" class="menu-title">Контакты</a>
+					<a href="#about" class="menu-title">Карта сайта</a>
+					<div class="search-container">
+						<input type="text" placeholder="Поиск..">
+						<button type="button"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+				<aside class="left_nav">
+					<div class="list-with-heading">
+						<a href=""><span>Краны-манипуляторы</span></a>
+						<a class="active" href=""><span>Эскаваторы-погрузчики</span></a>
+					</div>
+					<div class="promote">
+						<img class="rent_discount" src="img/discounts_rent.jpg" alt="Discount">
+					</div>
+					<div class="news">
+						<div class="news_head">
+							<div class="news_title">Новости</div>
+							<a class="archieve" href="">Архив</a>
+						</div>
+						<div class="news_list">
+							<div class="n_block">
+								<span class="date">25/07/2015</span>
+								<div class="news_link"><a href="">Компания работает на территории</a></div>
+								<div class="news_descr">Все машины находятся в хорошем состоянии и своевременно...</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<section class="main">
+					<div class="sitemap">
+						<ul>
+							<li><a href="">Главная</a></li>
+							<li><a href="">Услуги и продукция</a></li>
+							<li>Аренда спецтехники</li>
+						</ul>
+					</div>
+					<h1>Услуги самосвала</h1>
+					
+					<div class="booking_box">
+						<div class="product_image"></div>						
+						<div class="descr">
+							<div class="category">Самосвалы на базе авто ГАЗ</div>
+							<span class="order_time">Минимальное время заказа: <b>1.5 часа</b></span>
+							<span class="volume">Объем перевозимого груза: <b>3,5 м3</b></span>
+							<span class="capacity">Грузоподъемность: <b>6 т</b></span>
+							<span class="count">Колличество: <b>6 шт.</b></span>
+						</div>
+						<div class="functions">
+							<div class="price">1 000 руб./час</div>
+							<button class="yellow_button" id="order" type="button">Забронировать</button>
+						</div>
 
-</body>
+					</div>
+
+					<div class="booking_box">
+						<div class="product_image"></div>						
+						<div class="descr">
+							<div class="category">Самосвалы на базе авто ГАЗ</div>
+							<span class="order_time">Минимальное время заказа: <b>1.5 часа</b></span>
+							<span class="volume">Объем перевозимого груза: <b>3,5 м3</b></span>
+							<span class="capacity">Грузоподъемность: <b>6 т</b></span>
+							<span class="count">Колличество: <b>6 шт.</b></span>
+						</div>
+						<div class="functions">
+							<div class="price">1 000 руб./час</div>
+							<button class="yellow_button" id="order" type="button">Забронировать</button>
+						</div>
+
+					</div>
+
+					<div class="booking_box">
+						<div class="product_image"></div>						
+						<div class="descr">
+							<div class="category">Самосвалы на базе авто ГАЗ</div>
+							<span class="order_time">Минимальное время заказа: <b>1.5 часа</b></span>
+							<span class="volume">Объем перевозимого груза: <b>3,5 м3</b></span>
+							<span class="capacity">Грузоподъемность: <b>6 т</b></span>
+							<span class="count">Колличество: <b>6 шт.</b></span>
+						</div>
+						<div class="functions">
+							<div class="price">1 000 руб./час</div>
+							<button class="yellow_button" id="order" type="button">Забронировать</button>
+						</div>
+
+					</div>
+					
+					<p>
+						Самосвал – незаменимая техника в современном строительстве, которая часто применяется на стройплощадках. Как перевезти строительные материалы к месту назначения? Спасает перевозка самосвалами. Ведь эта техника обладает повышенной надежностью, проходимостью, маневренностью, оптимальной грузоподъемностью, способна работать даже в авральном режиме.Значимость услуги самосвалов сложно переоценить. Они незаменимы. Наиболее выгодной на сегодняшний день является аренда самосвала в компании «СтройСоюз», которая осуществляет свою деятельность в Великом Новгороде и Новгородской области, а также за ее пределами.
+					</p>
+					<p>
+						Заказ самосвала позволяет значительно сократить время на проведение строительных работ, чего довольно сложно достичь при использовании грузовиков. Самосвалы универсальны. Эта техника используется для перевозки песка, щебня, отсева, керамзита, торфа, ПГС, земли, а также для погрузки и вывоза строительного мусора, грунта, снега, в том числе крупногабаритного мусора.
+					</p>
+					<p>
+						Самосвалы широко используются в отрасли строительства дорог и домов, а также в других сферах.
+					</p>
+					<p>
+						Наша компания представляет широкий ассортимент спецтехники. Причем следует заметить, что у нас есть много единиц техники, которые легко и просто взять в аренду на любое время. Мы предлагаем вам технику наилучшего качества, все самосвалы находятся в отличном состоянии, у них пройдено техническое обслуживание, машины полностью готовы к использованию.Многих интересует аренда самосвалов, цены которой невысокие. Нужно отметить, что стоимость аренды во многом зависит от срока аренды, маршрута, производителя машины, требованиям к транспортировке. Компания «СтройСоюз» ориентирована на долгосрочное сотрудничество, поэтому у нас выгодные цены и удобная система скидок. Наша компания с удовольствием работает с частными заказчиками и организациям.
+					</p>
+
+					<h4>
+						Работаем по области и в регионах:
+					</h4>
+					<p>Компания «СтройСоюз» предлагает организациям и частным лицам услуги спецтехники. Работаем во всех районах Великого Новгорода, выезжаем в область и другие регионы.</p>
+					<div class="wide_img">
+						<img src="img/map.jpg" alt="">
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="top">
+					<div class="stat_mail_addr">
+						<p>© 2015 “СтройСоюз”</p>
+						<p>Адрес: г. Великий Новгород ,<br> ул.Большая Санкт-Петербургская, 56,<br> офис 5, 2 этаж, рядом с ТК "Лента"</p>
+					</div>
+					<div class="communic">
+						<p>E-mail: <a href="mailto:and922020@mail.ru?subject=Order">and922020@mail.ru</a></p>
+						<p>Skype: <a href="skype:and922020?call">and922020</a></p>
+					</div>
+					<div class="work_hours">
+						<div class="phones">
+							<a href="tel:88162603686">8 (8162) <b>60-36-86</b></a>/
+							<a href="tel:88162605578">8 (8162) <b>60-55-78</b></a><br>
+							<a href="tel:+79116003686"><b>+7 911 600 36 86</b></a><br>
+						</div>
+						<span>Работаем без выходных, с 8:00 до 23:00</span>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="smm">
+						<a href="" class="vk"><i class="fab fa-vk"></i></a>
+						<a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+					</div>
+					<div class="made_by">
+						<a href="">Разработка сайта:</a> kuratov.ru
+					</div>
+				</div>
+			</footer>
+			<nav id="menu">
+				<ul>
+					<li><a href="#content">Introduction</a></li>
+					<li><a href="#widescreen">Widescreen extension</a></li>
+					<li><a href="#drag">Drag add-on</a></li>
+					<li><a href="#fixed">Fixed elements</a></li>
+					<li class="Divider">Other demos</li>
+					<li><a href="default.html">Default demo</a></li>
+					<li><a href="advanced.html">Advanced demo</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="right_nav">
+			<button id="write_to_us" title="Go to top"><img src="img/pen_btn.png" alt=""></button>
+			<button id="call_to_us" title="Go to top"><img src="img/phone_btn.png" alt=""></button>
+			<button id="back_top_btn" title="Go to top"><img src="img/arrow_btn.png" alt=""></button>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/hammer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+		<script type="text/javascript" src="js/jquery.mhead.js"></script>
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
 </html>

@@ -139,19 +139,30 @@ function myFunction() {
    document.getElementById("myMainDropdown").classList.toggle("show");
 }
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
+$(".services .dropbtn").click(function(event) {
+   /* Act on the event */
    $('.dropbtn i.fa').toggleClass('fa-caret-down');
    $('.dropbtn i.fa').toggleClass('fa-caret-up');
+});
+window.onclick = function(e) {
    if (!e.target.matches('.dropbtn')) {
-
       var myMainDropdown = document.getElementById("myMainDropdown");
       if (myMainDropdown.classList.contains('show')) {
          myMainDropdown.classList.remove('show');
-
+         $('.dropbtn i.fa').toggleClass('fa-caret-down');
+   $('.dropbtn i.fa').toggleClass('fa-caret-up');
       }
    }
 }
 jQuery(document).ready(function($) {
+
+   $("#main_slider").slick({
+      arrows:true,
+      infinite:false,
+      prevArrow: $('.prev'),
+      prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
+      nextArrow:"<button type='button' class='slick-next pull-right'></button>"
+   });
 
    // When the user scrolls down 20px from the top of the document, show the button
    window.onscroll = function() {
