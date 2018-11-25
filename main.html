@@ -5,7 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link type="text/css" rel="stylesheet" href="css/normalize.css" />
-<!-- Add additional stylesheets next -->
+		<!-- Add additional stylesheets next -->
 		<link type="text/css" rel="stylesheet" href="css/demo.css" />
 		<link type="text/css" rel="stylesheet" href="css/slick.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css">
@@ -69,17 +69,17 @@
 				</div>
 				<aside class="left_nav">
 					<div class="dropdown-content" id="myMainDropdown">
-							<div class="list-with-heading">
-								<div class="title">Аренда спецтехники</div>
-								<a href=""><img src="img/kran-manipulator.jpg" alt=""><span>Краны-манипуляторы</span></a>
-							</div>
-							<div class="list-with-heading">
-								<div class="title">Продажа материалов</div>
-							</div>
-							<div class="list-with-heading">
-								<div class="title">Другие услуги</div>
-							</div>
+						<div class="list-with-heading">
+							<div class="title">Аренда спецтехники</div>
+							<a href=""><img src="img/kran-manipulator.jpg" alt=""><span>Краны-манипуляторы</span></a>
 						</div>
+						<div class="list-with-heading">
+							<div class="title">Продажа материалов</div>
+						</div>
+						<div class="list-with-heading">
+							<div class="title">Другие услуги</div>
+						</div>
+					</div>
 					<div class="promote">
 						<img class="rent_discount" src="img/discounts_rent.jpg" alt="Discount">
 					</div>
@@ -99,10 +99,41 @@
 				</aside>
 				<section class="main">
 					<div class="main_slider" id="main_slider">
-					<div><img src="img/slider_main.jpg" alt=""></div>
-					<div><img src="img/slider_main.jpg" alt=""></div>
+						<div><img src="img/slider_main.jpg" alt=""></div>
+						<div><img src="img/slider_main.jpg" alt=""></div>
+					</div>
+					<h3>Наша спецтехника</h3>
+					<div class="gal_box">
+						<div class="box">
+							<img src="img/spec.jpg" alt="">
+							<div class="description">Краны-манипуляторы</div>
+						</div>
+						<div class="box">
+							<img src="img/spec2.jpg" alt="">
+							<div class="description">Экскаватор-погрузчики</div>
+						</div>
+						<div class="box">
+							<img src="img/spec3.jpg" alt="">
+							<div class="description">Самосвалы</div>
+						</div>
+						<div class="box">
+							<img src="img/spec4.jpg" alt="">
+							<div class="description">Автокраны</div>
+						</div>
+						<div class="box">
+							<img src="img/spec5.jpg" alt="">
+							<div class="description">Шаланды</div>
+						</div>
+					</div>
+					<h3>Преимущества</h3>
+					<div class="advantages">
+						<div class="box">Обновляемый парк техники</div>
+						<div class="box">Прием заказов круглые сутки</div>
+						<div class="box">Опытные водители</div>
+						<div class="box">Любой вид расчета (наличный, безналичный)</div>
 					</div>
 				</section>
+				
 			</main>
 			<footer>
 				<div class="top">
@@ -150,7 +181,8 @@
 			<button id="call_to_us" title="Go to top"><img src="img/phone_btn.png" alt=""></button>
 			<button id="back_top_btn" title="Go to top"><img src="img/arrow_btn.png" alt=""></button>
 		</div>
-
+		
+		
 		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
 		<script type="text/javascript" src="js/hammer.min.js"></script>
@@ -158,6 +190,14 @@
 		<script type="text/javascript" src="js/jquery.mhead.js"></script>
 		<script src="js/jquery.magnific-popup.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-
+		<script type="text/javascript">
+			$("#main_slider").slick({
+		arrows:true,
+		infinite:false,
+		prevArrow: $('.prev'),
+		prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
+		nextArrow:"<button type='button' class='slick-next pull-right'></button>"
+		});
+		</script>
 	</body>
 </html>

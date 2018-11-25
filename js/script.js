@@ -156,14 +156,6 @@ window.onclick = function(e) {
 }
 jQuery(document).ready(function($) {
 
-   $("#main_slider").slick({
-      arrows:true,
-      infinite:false,
-      prevArrow: $('.prev'),
-      prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
-      nextArrow:"<button type='button' class='slick-next pull-right'></button>"
-   });
-
    // When the user scrolls down 20px from the top of the document, show the button
    window.onscroll = function() {
       scrollFunction()
