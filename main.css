@@ -128,6 +128,7 @@ a.vk i {
 
 .logo img {
     margin-bottom: 25px;
+    padding-right: 30px;
 }
 
 .mail_addr p b, .mail_addr a {
@@ -315,6 +316,7 @@ input[type="text"]:focus {
     display: block;
     width: auto;
     margin-bottom: 30px;
+    padding-left: 25px;
 }
 
 .dropdown-content {
@@ -359,6 +361,7 @@ button.dropbtn {
     border: none;
     margin-bottom: 0;
     text-align: center;
+    position: relative;
 }
 
 button.dropbtn:focus {
@@ -462,7 +465,8 @@ aside.left_nav .list-with-heading a span {
 aside.left_nav {
     padding-top: 50px;
     display: inline-block;
-    width: 27.1%;/* padding-left: 25px; */
+    width: 27.1%;
+    /* padding-left: 25px; */
 }
 
 section.main {
@@ -875,12 +879,13 @@ input#name, input#ph_or_email {
     border: #c3c3c3 solid 1px;
     margin-left: 12px;
     border-radius: 3px;
-    line-height: 25px;
+    line-height: 34px;
     box-shadow: 0 1px 1px 0 rgba(1, 0, 1, 0) inset;
     position: relative;
     width: 90%;
     color: #c2c2c2;
     font-family: "Tahoma";
+    font-size: 15px;
 }
 
 .form {
@@ -908,13 +913,13 @@ input#name, input#ph_or_email {
 
 .form-line.name:before {
     content: "";
-    margin-top: 5px;
+    margin-top: 10px;
     width: 14px;
     height: 20px;
     background: url(img/user.png);
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: -13px;
 }
 
@@ -926,7 +931,7 @@ input#name, input#ph_or_email {
     background: url(img/email_call.png);
     background-repeat: no-repeat;
     position: absolute;
-    top: 3px;
+    top: 7px;
     left: -16px;
     background-size: 18px 14px;
 }
@@ -938,6 +943,7 @@ input#name, input#ph_or_email {
 
 input#ph_or_email {
     margin-bottom: 10px;
+    width: 90.5%;
 }
 
 .ph_or_email span {
@@ -1121,9 +1127,10 @@ select#time {
     color: #666666;
     font-family: "Tahoma";
     resize: none;
-    width: 90%;
+    width: 90.3%;
     padding-left: 10px;
-    line-height: 25px;
+    line-height: 34px;
+    font-size: 15px;
 }
 
 .form-line.textarea {
@@ -1857,10 +1864,7 @@ font-size: 15px;
 color: #4789fc;
 }
 
-.gal_box {
-display: flex;
-justify-content: space-between;
-}
+.gal_box {display: flex;justify-content: space-between;margin-bottom: 15px;}
 
 .box {
 width: 128px;
@@ -1912,31 +1916,11 @@ float: left;
 font-size: 17px;
 }
 
-.advantages {
-content: "";
-display: table;
-clear: both;
-}
+.advantages {content: "";display: table;clear: both;margin-bottom: 30px;}
 
-.advantages .box .description {
-color: inherit;
-text-decoration: inherit;
-font-size: 17px;
-display: table-cell;
-vertical-align: middle;
-height: 75px;
-}
+.advantages .box .description {color: inherit;text-decoration: inherit;font-size: 19px;display: table-cell;vertical-align: middle;height: 75px;}
 
-.advantages .box .wrap:before {
-content: "";
-border: 1px solid #cccccc;
-width: 67px;
-height: 67px;
-display: block;
-top: 6%;
-left: 10%;
-position: absolute;
-}
+.advantages .box .wrap:before {content: "";border: 1px solid #e1e1e1;width: 67px;height: 67px;display: block;top: 6%;left: 10%;position: absolute;}
 
 .wrap {
 display: block;
@@ -1959,4 +1943,171 @@ position: relative;
     margin: 0 auto;
 }
 
+}
+
+.back {
+    background-image: url("img/back_call.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-x: 80px;
+    height: 310px;
+    background-color: white;
+    width: 675px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.call_back .form {
+    margin-left: 50px;
+    width: 255px;
+    background-color: white;
+    height: 275px;
+}
+
+.call_back button#live_a_request {
+    margin-left: 12px;
+    margin-top: 0px;
+    max-width: 95%;
+}
+
+.call_back .form-line.textarea {
+    margin-bottom: 8px;
+}
+.call_back textarea {
+    height: 70px;
+}
+
+.call_back button#live_a_request {
+    width: 100%;
+}
+
+.call_back input#name {
+    width: 91%;
+}
+
+.call_back input#ph_or_email {
+    width: 91%;
+}
+.call_back .title {
+    font-size: 18px;
+}
+.main_page .left_nav .title {
+    color: #4789fc;
+    font-size: 18px;
+    font-family: "Tahoma";
+    font-weight: 500;
+    position: relative;
+}
+
+.main_page .left_nav .title:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    top: 0;
+    text-decoration: underline;
+    border-bottom: 2px dotted #4789fc;
+}
+
+.main_page aside.left_nav {
+    padding-top: 13px;
+}
+.main_page button.accordion {
+    position: relative;
+    color: #4789fc;
+    font-size: 18px;
+    font-family: "Tahoma";
+    font-weight: 500;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0px;
+    margin-left: 55px;
+}
+.main_page button.accordion:hover {
+    background-color: inherit;
+}
+.main_page .left_nav button.accordion:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 37px;
+    text-decoration: underline;
+    border-bottom: 2px dotted #4789fc;
+}
+.main_page .left_nav .panel {
+    padding-left: 0;
+    position: relative;
+    display: block;
+}
+
+.main_page .left_nav .question_answer a img {
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+    padding-right: 17px;
+}
+
+.main_page .left_nav .question_answer a {
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: gray;
+}
+
+.main_page .left_nav .question_answer span {
+    padding-left: 55px;
+    font-family: "Tahoma";
+    font-size: 17px;
+}
+.main_page button.accordion:hover {
+    opacity: 0.6;
+}
+.gal_box .description {
+    line-height: 17px;
+}
+.main_page .left_nav div.question_answer:before{
+    content: "\f0d8";
+    position: absolute;
+    font-family: "FontAwesome";
+    right: 10px;
+    top: 18px;
+}
+.main_page .left_nav div.question_answer.clicked:before{
+    content:"\f0d7";
+}
+.main_page .question_answer {
+    position: relative;
+}
+
+.topnav .services i.fa {
+    position: absolute;
+    right: 9px;
+    top: 16px;
+    opacity: 0.5;
+    font-size: 16px;
+}
+#text_call_back_form button.mfp-close {
+    color: white;
+    top: -5.0%;
+    left: 73.4%;
+    font-size: 40px;
+}
+form#text_call_back_form {
+    width: 675px;
+    margin: 0 auto;
+}
+
+#text_call_back_form button.mfp-close {
+    top: -14%;
+    left: 73.3%;
+    font-size: 45px;
+}
+
+@media screen and (max-width: 425px){
+    .call_back{
+        overflow: overlay;
+    }
 }

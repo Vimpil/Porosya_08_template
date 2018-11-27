@@ -135,7 +135,7 @@ $(function() {
 });
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function topnav_dropbtn() {
    document.getElementById("myMainDropdown").classList.toggle("show");
 }
 // Close the dropdown if the user clicks outside of it
@@ -155,6 +155,33 @@ window.onclick = function(e) {
    }
 }
 jQuery(document).ready(function($) {
+
+   /*Left_nav main*/
+   $(".main_page button.accordion").click(function(event) {
+      $(this).parent().toggleClass('clicked');
+      console.log($(this).parent());
+   });
+   /*END Left_nav main*/
+
+   $('.call_back_form').magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#text_call_back_form',
+      closeOnBgClick:true,
+      closeBtnInside:true,
+
+      // When elemened is focused, some mobile browsers in some cases zoom in
+      // It looks not nice, so we disable it:
+      callbacks: {
+         beforeOpen: function() {
+            if($(window).width() < 700) {
+               this.st.focus = false;
+            } else {
+               this.st.focus = '#text_call_back_form';
+            }
+         }
+      }
+   });
 
    // When the user scrolls down 20px from the top of the document, show the button
    window.onscroll = function() {

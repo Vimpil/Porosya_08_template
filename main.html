@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		
-		<div id="page">
+		<div id="page" class="main_page">
 			<div class="mh-head Sticky header" id="my-header">
 				<a href="#menu"><span></span></a>
 				Строй Союз
@@ -43,7 +43,7 @@
 			<main>
 				<div class="topnav">
 					<div class="active services">
-						<button class="dropbtn" onclick="myFunction()">Услуги и продукция
+						<button class="dropbtn" onclick="topnav_dropbtn()">Услуги и продукция
 						<i class="fa fa-caret-down"></i>
 						</button>
 						<div class="dropdown-content" id="myMainDropdown">
@@ -68,16 +68,22 @@
 					</div>
 				</div>
 				<aside class="left_nav">
-					<div class="dropdown-content" id="myMainDropdown">
-						<div class="list-with-heading">
-							<div class="title">Аренда спецтехники</div>
+					<div class="question_answer">
+						<button class="accordion">Аренда спецтехники</button>
+						<div class="panel">
 							<a href=""><img src="img/kran-manipulator.jpg" alt=""><span>Краны-манипуляторы</span></a>
 						</div>
-						<div class="list-with-heading">
-							<div class="title">Продажа материалов</div>
+					</div>
+					<div class="question_answer">
+						<button class="accordion">Продажа материало</button>
+						<div class="panel">
+							<a href=""><img src="img/kran-manipulator.jpg" alt=""><span>Краны-манипуляторы</span></a>
 						</div>
-						<div class="list-with-heading">
-							<div class="title">Другие услуги</div>
+					</div>
+					<div class="question_answer">
+						<button class="accordion">Другие услуги</button>
+						<div class="panel">
+							
 						</div>
 					</div>
 					<div class="promote">
@@ -128,9 +134,32 @@
 					<h3>Преимущества</h3>
 					<div class="advantages">
 						<div class="box"><div class="wrap"><img src="img/advant.png" alt=""></div><div class="description">Обновляемый парк техники</div></div>
-						<div class="box"><div class="wrap"><img src="img/advant2.png" alt=""></div><div class="description">Прием заказов круглые сутки</div></div>
-						<div class="box"><div class="wrap"><img src="img/advant3.png" alt=""></div><div class="description">Опытные водители</div></div>
+						<div class="box"><div class="wrap"><img src="img/advant2.png" alt=""></div><div class="description">Опытные водители</div></div>
+						<div class="box"><div class="wrap"><img src="img/advant3.png" alt=""></div><div class="description">Прием заказов круглые сутки</div></div>
 						<div class="box"><div class="wrap"><img src="img/advant4.png" alt=""></div><div class="description">Любой вид расчета (наличный, безналичный)</div></div>
+					</div>
+					<h4>Аренда спецтехники от компании «СтройСоюз»</h4>
+					<p>Покупка техники для выполнения строительных и ремонтных работ часто невозможна из-за высокой стоимости. Лучшим решением в этом случае является аренда спецтехники на выгодных условиях, например, в компании «СтройСоюз».</p>
+					<p>Сегодня на рынке можно взять в аренду любую технику — от катка до буровой установки. Аренда техники — это выгодная сделка, которая применима в разных сферах: в сельском хозяйстве, в промышленности, при строительстве дорог, уборке мусора, перевозке сыпучих материалов. Хорошие машины имеют высокую стоимость, и хранить их в гараже предприятия ради единичной работы невыгодно. Поэтому для выполнения определенного заказа выгоднее заключить договор аренды спецтехники.</p>
+					<p>Наша компания имеет современную техническую базу. Все машины находятся в хорошем состоянии и своевременно проходят осмотры и ремонты. Автомобильный парк постоянно пополняется новыми моделями для удовлетворения потребностей клиента. Сотрудники, имеющие большой опыт работы, готовы предоставить консультации и полный комплекс услуг по подбору и аренде спецтехники.</p>
+					<p>Компания работает на территории Новгородской области и Великого Новгорода. Также специалисты готовы выехать на объекты, находящиеся за пределами области.</p>
+					<h3>Мы свяжемся с вами!</h3>
+					<div class="call_back">
+						<div class="title">Оставьте свои контактные данные в заявке</div>
+						<div class="back">
+							<div class="form">
+								<div class="form-line name">
+									<input placeholder="Ваше имя" type="text" id="name" name="name">
+								</div>
+								<div class="form-line ph_or_email">
+									<input placeholder="Ваш телефон или e-mail" type="text" id="ph_or_email">
+								</div>
+								<div class="form-line textarea">
+									<textarea placeholder="Сообщение..." type="text"></textarea>
+								</div>
+								<button class="yellow_button" id="live_a_request" type="button">Оставить заявку</button>
+							</div>
+						</div>
 					</div>
 				</section>
 				
@@ -177,10 +206,31 @@
 			</nav>
 		</div>
 		<div class="right_nav">
-			<button id="write_to_us" title="Go to top"><img src="img/pen_btn.png" alt=""></button>
-			<button id="call_to_us" title="Go to top"><img src="img/phone_btn.png" alt=""></button>
+
+			<button id="write_to_us" title="Write to us"><img src="img/pen_btn.png" alt=""></button>
+			<a class="call_back_form" href="#text_call_back_form"><button id="call_to_us" title="Call to us"><img src="img/phone_btn.png" alt=""></button></a>
 			<button id="back_top_btn" title="Go to top"><img src="img/arrow_btn.png" alt=""></button>
 		</div>
+
+		<!-- form itself -->
+		<form id="text_call_back_form" class="white-popup-block mfp-hide" _lpchecked="1">
+			<div class="call_back">
+						<div class="back">
+							<div class="form">
+								<div class="form-line name">
+									<input placeholder="Ваше имя" type="text" id="name" name="name">
+								</div>
+								<div class="form-line ph_or_email">
+									<input placeholder="Ваш телефон или e-mail" type="text" id="ph_or_email">
+								</div>
+								<div class="form-line textarea">
+									<textarea placeholder="Сообщение..." type="text"></textarea>
+								</div>
+								<button class="yellow_button" id="live_a_request" type="button">Оставить заявку</button>
+							</div>
+						</div>
+					</div>
+		</form>
 		
 		
 		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
