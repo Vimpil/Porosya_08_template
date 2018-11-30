@@ -51,7 +51,7 @@ p, button {
     color: rgb(73, 73, 73);
     font-weight: inherit;
     line-height: 19px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     border: none;
     text-align: justify;
 }
@@ -124,6 +124,9 @@ a.vk i {
 
 .logo_smm i:hover {
     opacity: 0.4000000059604644775390625;
+}
+.logo_smm a:hover{
+    opacity: 1;
 }
 
 .logo img {
@@ -582,7 +585,7 @@ section.main {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 12px;
-    color: #4689FC;
+    color: #a0a0a0;
 }
 
 .news_head {
@@ -1437,11 +1440,7 @@ font-size: 18px;
 margin-bottom: 5px;
 }
 
-.descr {
-text-align: justify;
-display: inline-block;
-padding-left: 15px;
-}
+.descr {flex-direction: column;display: flex;justify-content: center;max-width: 300px;margin-left: -5%;}
 
 .stat_mail_addr {
 display: inline-block;
@@ -1719,10 +1718,20 @@ background-image: none !important;
 }
 
 .booking_box img {
-display: inline-block;
-float: left;
-width: 170px;
-}
+    position: absolute;
+    right: 0;
+    left: 0;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    }
+
+    @media screen and (max-width:931px) {
+        .booking_box button#order{
+            margin:0 auto;
+        }
+    }
 
 .category {
 font-size: 17px;
@@ -1740,41 +1749,19 @@ float: right;
 text-align: center;
 }
 
-.price {
-font-family: "Tahoma Bold";
-font-size: 18px;
-margin-bottom: 20px;
-text-align: center;
-}
+.price {font-family: "Tahoma";font-size: 18px;text-align: center;}
 
-.functions {
-display: block;
-float: right;
-}
+.functions {display: flex;flex-direction: column;text-align: center;justify-content: center;flex-basis: auto;min-width: 200px;}
 
-.booking_box {
-position: relative;
-width: 100%;
-height: auto;
-clear: both;
-margin-bottom: 30px;
-}
+.booking_box {display: flex;position: relative;width: 100%;height: auto;clear: both;margin-bottom: 30px;justify-content: space-between;}
 
-.product_image {
-background-image: url("img/dump.jpg");
-background-repeat: no-repeat;
-background-size: 160px;
-height: 130px;
-width: 153px;
-position: relative;
-display: inline-block;
-float: left;
-}
+.product_image {display: inherit;position: relative;justify-content: center;flex-direction: column;width: 170px;overflow: hidden;height: 120px;}
 
 @media screen and (max-width:931px) {
 .booking_box {
-    display: grid;
+    display: flex;
     margin: 0 auto;
+    flex-direction: column;
     float: none;
     margin-bottom: 40px;
 }
@@ -1790,17 +1777,12 @@ float: left;
 
 @media screen and (max-width:931px) {
 .descr {
-    margin: 0 auto;
     margin-bottom: 20px;
 }
 
 }
 
-.booking_box button#order {
-background-color: #bfbfbf;
-background-image: none;
-border: #bebebe;
-}
+.booking_box button#order {background-color: #bfbfbf;background-image: none;border: #bebebe;}
 
 .booking_box button#order:hover {
 border: #d48c01 solid 1px;
@@ -1811,13 +1793,14 @@ button.slick-prev.pull-left.slick-arrow.slick-disabled, button.slick-next.pull-r
 opacity: 0.4;
 }
 
-.wide_img {
-margin-bottom: 60px;
+.wide_img {margin-bottom: 60px;}
+
+@media screen and (max-width:781px){
+    .wide_img{
+        overflow: scroll;
+    }
 }
 
-.wide_img img {
-width: 100%;
-}
 
 button.slick-prev.pull-left.slick-arrow:hover, button.slick-next.pull-right.slick-arrow:hover {
 cursor: pointer;
@@ -2011,7 +1994,7 @@ position: relative;
 }
 
 .main_page aside.left_nav {
-    padding-top: 13px;
+    padding-top: 16px;
 }
 .main_page button.accordion {
     position: relative;
@@ -2110,4 +2093,52 @@ form#text_call_back_form {
     .call_back{
         overflow: overlay;
     }
+}
+div#my-header {
+    z-index: 1000;
+}
+.services .category {
+    color: #4789fc;
+    text-decoration: underline;
+}
+
+.services .descr {
+    margin-left: 0%;
+}
+
+@media screen and (max-width:931px) {
+    .services .descr{
+        margin:0 auto;
+    }
+}.services .advantages {position: relative;display: inline-block;margin-bottom: 0px;}
+
+.services .box {
+    clear: both;
+    width: 100%;
+    margin-bottom: 4px;
+    line-height: 17px;
+    display: inline-block;
+}
+
+.services .box img {
+    width: 25px;
+    padding: 7px 0;
+    padding-right: 15px;
+    padding-left: 0;
+}
+.services .box .description {font-size: 12px;font-family: "Tahoma";height: 37px;}
+button#to_book_a_call {
+    width: 300px;
+}
+.booking_box.discount {
+    border-bottom: 1px solid #faa607;
+    border-top: 1px solid #faa607;
+}
+
+.discount .price {
+    border: 1px solid #fda801;
+    padding: 10px;
+}
+sup {
+    font-size: 12px;
 }
