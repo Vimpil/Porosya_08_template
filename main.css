@@ -1195,8 +1195,6 @@ select#time {
     height: 22px;
 }
 
-}
-
 @media screen and (max-width:512px) {
 .form {
     width: 100%;
@@ -1286,13 +1284,7 @@ margin-left: 10px;
 text-align: center;
 }
 
-.review .text {
-display: block;
-margin: 0 auto;
-float: right;
-width: 85%;
-position: relative;
-}
+.review .text {display: block;margin: 0 auto;float: right;width: 85%;position: relative;}
 
 .title {
 font-family: "HeliosCond Bold";
@@ -1300,20 +1292,9 @@ font-size: 21px;
 margin-bottom: 10px;
 }
 
-.reviews img {
-margin: 0;
-padding: 0;
-padding-top: 6px;
-vertical-align: top;
-position: relative;
-display: inline;
-}
+.reviews img {margin: 0;padding: 0;padding-top: 6px;vertical-align: top;position: relative;display: inline;}
 
-.review {
-position: relative;
-display: inline-block;
-margin-bottom: 40px;
-}
+.review {position: relative;display: block;margin-bottom: 40px;}
 
 .review .text:before {
 content: "";
@@ -1440,7 +1421,7 @@ font-size: 18px;
 margin-bottom: 5px;
 }
 
-.descr {flex-direction: column;display: flex;justify-content: center;max-width: 300px;margin-left: -5%;}
+.descr {flex-direction: column;display: flex;justify-content: center;}
 
 .stat_mail_addr {
 display: inline-block;
@@ -1778,6 +1759,8 @@ text-align: center;
 @media screen and (max-width:931px) {
 .descr {
     margin-bottom: 20px;
+    margin-left: 0;
+    max-width: 300px;
 }
 
 }
